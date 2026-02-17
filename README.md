@@ -1,23 +1,23 @@
+# 📝 Todo List React App
+Todo List is a simple task management application built with React.js.
+It allows users to add tasks, delete tasks, and mark tasks as completed.
+The app is deployed live via Vercel, making it easily accessible on the web.
+
+---
+
 ## ✨ Features
 
-👤 Customer Management
-- Add new customers
-- Edit existing customer data
-- Delete customers
-- View detailed customer information
-
-📊 Dashboard
-- Display customer statistics
-- Search and filter functionality
-
-📱 Responsive
-- Optimized for desktop, tablet, and mobile screens
+- Add new tasks
+- Delete existing tasks
+- Mark tasks as completed
+- Interactive UI built with React Hooks
+- Deployed live on Vercel
 
 ---
 
 ## 🌐 Live Demo
 
-👉 **[View Live Project](https://customer-management-sooty.vercel.app/)**
+👉 **[View Live Project](https://todo-list-react-five-theta.vercel.app/)**
 
 ---
 
@@ -25,7 +25,7 @@
 
 - React
 - JavaScript (ES6+)
-- CSS / CSS Modules
+- Tailwind CSS
 - HTML5
 - Vercel – Deployment platform
 
@@ -34,25 +34,19 @@
 ## 📂 Project Structure
 
 ```
-node_modules/      # Installed dependencies
-public/            # Static assets (images, icons)
-src/               # Main source code
-├─ components/     # Reusable UI components (Navbar, Table, Forms)
-├─ pages/          # Application pages (Home, Customers, Dashboard)
-├─ store/          # State management (Context/Redux)
-├─ lib/            # Helper functions / API calls
-.gitignore
-package.json
-package-lock.json
-README.md
+📦TodoList-react
+ ┣ 📂 public
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┃ ┗ (React components)
+ ┃ ┣ App.jsx
+ ┃ ┣ index.jsx
+ ┃ ┗ ...
+ ┣ .gitignore
+ ┣ package.json
+ ┣ README.md
+ ┗ vite.config.js
 ```
-Key folders explanation:
-
-- components/ → Reusable UI components like CustomerCard, Modal, Navbar
-- pages/ → Main app pages: Dashboard, Customer List, Customer Detail
-- store/ → State management logic
-- lib/ → Utility functions and API calls
-- public/ → Static assets such as icons, logos, and images
 
 ---
 
@@ -62,7 +56,7 @@ Follow these steps to run the project locally:
 
 1️⃣ Clone the repository
 ```
-git clone https://github.com/Mostafa-eskander/customer-frontend.git
+git clone https://github.com/Mostafa-eskander/TodoList-react.git
 ```
 2️⃣ Navigate to project folder
 ```
@@ -74,11 +68,11 @@ npm install
 ```
 4️⃣ Run the development server
 ```
-npm start
+npm run dev
 ```
 Open in browser:
 ```
-http://localhost:3000
+http://localhost:5173/
 ```
 
 ---
@@ -90,16 +84,15 @@ To deploy your own version:
 ```
 npm run build
 ```
-Then upload the Next.js folder to Vercel.
+Then upload the dist folder to Vercel.
 
 ---
 
 ### 🎯 Future Improvements
 
-- Add authentication and roles (Admin/User)
-- Integrate backend API for persistent data
-- Add export/import customer CSV functionality
-- Enhance dashboard with charts and analytics
+- Add data persistence using LocalStorage
+- Add task filtering (completed / pending)
+- Enhance UI design for better usability
 
 ---
 
